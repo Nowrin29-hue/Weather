@@ -79,3 +79,12 @@ button:hover {
 #suggestionList li:hover {
   background-color: #f0f0f0;
 }
+
+#clearBtn {
+  background-color: #f44336;
+  color: white;
+}
+
+#clearBtn:hover {
+  background-color: #b9d457;
+}

@@ -2,6 +2,8 @@ const apiKey = "ca1f719867c15a93c38eb3eb35122422";
 const cityInput = document.getElementById("cityInput");
 const suggestionList = document.getElementById("suggestionList");
 
+document.getElementById("clearBtn").addEventListener("click", clearWeather);
+
 document.getElementById("weatherForm").addEventListener("submit", function (e) {
   e.preventDefault();
   getWeatherByName(cityInput.value.trim());
@@ -97,6 +99,14 @@ function displayWeather(data) {
     <p><strong>Wind:</strong> ${data.wind.speed} m/s</p>
   `;
 }
+function clearWeather() {
+  cityInput.value = ''; 
+  document.getElementById("weatherResult").innerHTML = '';
+  const loadingEl = document.getElementById("loading");
+  if (loadingEl) loadingEl.style.display = 'none';
+  document.body.style.background = 'linear-gradient(to top right, #74ebd5, #ACB6E5)';
+}
+
 
 function showError(message) {
   document.getElementById('weatherResult').innerHTML = `<p style="color:red;">${message}</p>`;
