@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  background: #fff;
+  background: #ffffff;
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -29,30 +29,6 @@ input[type="text"] {
   margin-bottom: 10px;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #1e88e5;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #1565c0;
-}
-
-#weatherResult {
-  margin-top: 20px;
-}
-
-.weather-icon {
-    font-size: 60px;
-    color: #1e88e5;
-    margin-bottom: 10px;
-  }
-  
-
 #suggestionList {
   list-style: none;
   padding: 0;
@@ -61,8 +37,8 @@ button:hover {
   overflow-y: auto;
   border: 1px solid #ccc;
   border-top: none;
-  width: 70%;
-  margin: 0 auto 10px;
+  width: 50%;
+  margin : 0 auto;
   background: white;
   position: absolute;
   z-index: 10;
@@ -80,11 +56,42 @@ button:hover {
   background-color: #f0f0f0;
 }
 
+button {
+  padding: 10px 20px;
+  font-size: 13px;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1565c0;
+  font-weight: bold;
+}
+
+.submitBtn {
+  margin-top: 20px;
+}
+
+#weatherResult {
+  margin-top: 20px;
+}
+
+.weather-icon {
+    font-size: 60px;
+    color: #1e88e5;
+    margin-bottom: 10px;
+  }
+  
+
 #clearBtn {
   background-color: #f44336;
   color: white;
 }
 
 #clearBtn:hover {
-  background-color: #b9d457;
+  background-color: #146d07;
+  font-weight: bold;
 }

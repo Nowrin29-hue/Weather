@@ -104,7 +104,7 @@ function clearWeather() {
   document.getElementById("weatherResult").innerHTML = '';
   const loadingEl = document.getElementById("loading");
   if (loadingEl) loadingEl.style.display = 'none';
-  document.body.style.background = 'linear-gradient(to top right, #74ebd5, #ACB6E5)';
+  document.body.style.background = 'linear-gradient(to top right, #f9f6e2;,rgb(218, 225, 253))';
 }
 
 
